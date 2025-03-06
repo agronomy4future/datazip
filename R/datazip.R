@@ -24,12 +24,12 @@
 #' df= data.frame(x= 1:5, y= letters[1:5])
 #' # convert data to code
 #' datazip(df) # Print compressed representation
-#' datazip(df, output="data1.rds") # Save as RDS
-#' datazip(df, output="data2.r") # Save as R script
+#' datazip(df, output="df1.rds") # Save as RDS
+#' datazip(df, output="df2.r") # Save as R script
 #'
 #' # import code to data
-#' df_loaded_rds= dataunzip("df.rds")  # Load from RDS file
-#' df_loaded_r= dataunzip("df.r")      # Load from R script file
+#' df_loaded_rds= dataunzip("df1.rds")  # Load from RDS file
+#' df_loaded_r= dataunzip("df2.r")      # Load from R script file
 #' print(df_loaded_rds)
 #' print(df_loaded_r)
 datazip= function(df, output=NULL) {
