@@ -45,7 +45,6 @@ print(df_loaded_rds)
 ## Let’s practice with actual dataset
 
 ``` r
-# to uplaod data
 if(!require(readr)) install.packages("readr")
 library(readr)
 
@@ -63,14 +62,11 @@ print(head(dataA,5))
 .
 .
 
-# to convert data to code and output in R script
 datazip(df)
 structure(list(Genotype=c("Genotype_A","Genotype_A","Genotype_A","Genotype_A","Genotype_B","Genotype_B","Genotype_B......
 
-# to convert BigData to code and output in R script
 if(!require(readr)) install.packages("readr")
 library(readr)
-
 github="https://raw.githubusercontent.com/agronomy4future/raw_data_practice/main/wheat_grains_data_training.csv"
 dataA=data.frame(read_csv(url(github),show_col_types= FALSE))
 
@@ -88,13 +84,8 @@ print(tail(dataA,5))
 96318    18.092
 96319    18.092
 
-# using datazip(dataA) is no practical benefit to saving such a large code block in your R script. In this case, a better approach is to export the code to R file instead.
-
 setwd("C:/Users/Desktop") # set up the pathway to save the file
-
 datazip(dataA, output="dataA_output.r") # to save the code as .r file
-
 df_loaded_r= dataunzip("dataA_output.r") # to import .r file to R as data frame
-
 print(tail(df_loaded_r, 5))
 ```
