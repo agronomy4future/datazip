@@ -14,6 +14,13 @@
 #' @export
 #'
 #' @examples
+#'if(!require(remotes)) install.packages("remotes")
+#'if (!requireNamespace("datazip", quietly = TRUE)) {
+#'    remotes::install_github("agronomy4future/datazip", force= TRUE)
+#'}
+#'library(remotes)
+#'library(datazip)
+#'
 #' df= data.frame(x= 1:5, y= letters[1:5])
 #' # convert data to code
 #' datazip(df) # Print compressed representation
