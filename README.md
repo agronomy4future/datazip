@@ -37,7 +37,7 @@ datazip(df)
 # to save the code as .r file in my PC
 datazip(df, output=output="df1_output.r")
 
-# to save the code as .rds df2 in my PC
+# to save the code as .rds in my PC
 datazip(df, output=output="dataB_output.rds")
 
 # to import the code to R
