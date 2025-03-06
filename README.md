@@ -35,10 +35,10 @@ This is a basic code to convert data to code
 datazip(df)
 
 # to save the code as .r file in my PC
-datazip(df, output=output="df1_output.r")
+datazip(df, output=output="df1.r")
 
 # to save the code as .rds in my PC
-datazip(df, output=output="dataB_output.rds")
+datazip(df, output=output="df2.rds")
 
 # to import the code to R
 df_loaded_r= dataunzip("df1.r")
