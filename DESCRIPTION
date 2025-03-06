@@ -1,0 +1,10 @@
+Package: datazip
+Title: Convert Data into Code with a Single Line
+Version: 0.0.0.9000
+Authors@R: 
+    person("JK", "Kim", , "agronomy4future@gmail.com", role = c("aut", "cre"))
+Description: This code allows for the simple conversion of data into code with a single line, making it easy to save as a script.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
