@@ -31,10 +31,16 @@ library(datazip)
 This is a basic code to convert data to code
 
 ``` r
+# to convert data to code and output in R script
 datazip(df)
+
+# to save the code as .r file in my PC
 datazip(df, output=output="df1_output.r")
+
+# to save the code as .rds df2 in my PC
 datazip(df, output=output="dataB_output.rds")
 
+# to import the code to R
 df_loaded_r= dataunzip("df1.r")
 df_loaded_rds= dataunzip("df2.rds")
 
@@ -63,8 +69,8 @@ print(head(dataA,5))
 .
 
 datazip(df)
-structure(list(Genotype=c("Genotype_A","Genotype_A","Genotype_A","Genotype_A","Genotype_B","Genotype_B","Genotype_B......
 
+# to import BigData to R
 if(!require(readr)) install.packages("readr")
 library(readr)
 github="https://raw.githubusercontent.com/agronomy4future/raw_data_practice/main/wheat_grains_data_training.csv"
