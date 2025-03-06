@@ -53,7 +53,6 @@ print(df_loaded_rds)
 ``` r
 if(!require(readr)) install.packages("readr")
 library(readr)
-
 github= "https://raw.githubusercontent.com/agronomy4future/raw_data_practice/main/fertilizer_treatment.csv"
 dataA= data.frame(read_csv(url(github),show_col_types = FALSE))
 
