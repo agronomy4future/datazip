@@ -67,7 +67,11 @@ datazip= function(df, output=NULL) {
   return(invisible(df))
 }
 
-# Function to load data from an RDS or R script file
+#' Decompress data from .rds or .r file
+#' 
+#' @param output A character string specifying the file path to load.
+#' @return The loaded data frame.
+#' @export
 dataunzip= function(output) {
   if (grepl("\\.rds$", output, ignore.case=TRUE)) {
     df_loaded= readRDS(file=output)
