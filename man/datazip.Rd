@@ -22,6 +22,13 @@ formatting its \code{dput()} output for compact representation. The function can
 also save the data.frame as an RDS or R script file.
 }
 \examples{
+if(!require(remotes)) install.packages("remotes")
+if (!requireNamespace("datazip", quietly = TRUE)) {
+remotes::install_github("agronomy4future/datazip", force= TRUE)
+}
+library(remotes)
+library(datazip)
+
 df= data.frame(x= 1:5, y= letters[1:5])
 # convert data to code
 datazip(df) # Print compressed representation
