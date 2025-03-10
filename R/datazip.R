@@ -2,7 +2,7 @@
 #'
 #' This function compresses a data.frame by removing spaces from column names and
 #' formatting its `dput()` output for compact representation. The function can
-#' also save the data.frame as an RDS or R script file.
+#' also save the data.frame as an RDS or R script file. For more details, please visit https://github.com/agronomy4future/datazip
 #'
 #' @param df A dataframe to be compressed and optionally saved.
 #' @param output A character string specifying the file path to save the output.
