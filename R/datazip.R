@@ -70,16 +70,13 @@ datazip= function(df, output=NULL) {
 # Function to load data from an RDS or R script file
 dataunzip= function(output) {
   if (grepl("\\.rds$", output, ignore.case=TRUE)) {
-    # Load from RDS file
     df_loaded= readRDS(file=output)
     cat("Data loaded from RDS file:", output, "\n")
   } else if (grepl("\\.r$", output, ignore.case=TRUE)) {
-    # Load from R script file
     df_loaded= dget(file=output)
     cat("Data loaded from R script file:", output, "\n")
   } else {
     stop("Unsupported file format. Use '.rds' or '.r'.")
   }
-
   return(df_loaded)
 }
