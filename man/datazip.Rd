@@ -19,7 +19,7 @@ Returns the modified dataframe invisibly.
 \description{
 This function compresses a data.frame by removing spaces from column names and
 formatting its \code{dput()} output for compact representation. The function can
-also save the data.frame as an RDS or R script file.
+also save the data.frame as an RDS or R script file. For more details, please visit https://github.com/agronomy4future/datazip
 }
 \examples{
 if(!require(remotes)) install.packages("remotes")
